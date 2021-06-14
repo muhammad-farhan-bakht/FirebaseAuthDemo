@@ -37,6 +37,10 @@ class LoginActivity : AppCompatActivity() {
         binding.buttonRegister.setOnClickListener {
             this@LoginActivity.navigateTo(RegisterActivity::class.java)
         }
+
+        binding.buttonReset.setOnClickListener {
+            throw IllegalArgumentException("Test Crash")
+        }
     }
 
     private fun validate(): Boolean {
