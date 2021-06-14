@@ -37,10 +37,6 @@ class LoginActivity : AppCompatActivity() {
         binding.buttonRegister.setOnClickListener {
             this@LoginActivity.navigateTo(RegisterActivity::class.java)
         }
-
-        binding.buttonReset.setOnClickListener {
-            throw RuntimeException("Test Crash Now 14-June-2021")
-        }
     }
 
     private fun validate(): Boolean {
